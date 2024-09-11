@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <style>
+    .faculty-view {
+      background-color: #e0ffff; /* Light blue background */
+      border-radius: 20px; /* Rounded corners */
+      padding: 30px; /* Padding for content */
+      margin: 0 auto; /* Center horizontally */
+      display: flex; /* Allow vertical centering */
+      flex-direction: column; /* Stack content vertically */
+      align-items: center; /* Center content horizontally */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    }
+
+    .faculty-name {
+      color: #007bff; /* Blue color for faculty name */
+      font-size: 20px; /* Larger font size for title */
+      margin-bottom: 10px; /* Spacing after title */
+    }
+
+    .faculty-details {
+      display: flex; /* Arrange details side-by-side */
+      flex-wrap: wrap; /* Allow details to wrap if needed */
+      justify-content: space-between; /* Distribute details evenly */
+      width: 100%; /* Take full width */
+    }
+
+    .faculty-detail {
+      color: #6c757d; /* Gray color for details */
+      font-weight: bold; /* Bold font for clarity */
+      margin-bottom: 5px; /* Spacing between details */
+      width: 45%; /* Set maximum width for each detail section */
+    }
+
+    .faculty-detail span {
+      font-weight: normal; /* Regular font weight for values */
+    }
+  </style>
+  <title>View Faculty</title>
+</head>
+<body>
+  {% include 'nav.html' %}
+  <div class="container mt-3">
+    <div class="faculty-view">
+      <h5 class="faculty-name"><b>Hello {{ faculty.name }}!</b></h5>
+      <div class="faculty-details">
+        <p class="faculty-detail"><strong>Faculty ID:</strong> <span class="faculty-id">{{ faculty.faculty_id }}</span></p>
+        <p class="faculty-detail"><strong>Subject:</strong> <span class="faculty-subject">{{ faculty.subject }}</span></p>
+        <p class="faculty-detail"><strong>Email:</strong> <span class="faculty-email">{{ faculty.email }}</span></p>
+        <p class="faculty-detail"><strong>Batch:</strong> <span class="faculty-email">{{ faculty.batch }}</span></p>
+      </div>
+    </div>
+  </div>
+  {% include 'footer.html' %}
+</body>
+</html>

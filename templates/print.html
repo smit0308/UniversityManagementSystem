@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB Collections Data</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data from MongoDB Collections</h1>
+
+    <h2>Faculty Collection</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Faculty ID</th>
+                <th>Subject</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Batch</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for faculty_member in faculty %}
+            <tr>
+                <td>{{ faculty_member.name }}</td>
+                <td>{{ faculty_member.faculty_id }}</td>
+                <td>{{ faculty_member.subject }}</td>
+                <td>{{ faculty_member.email }}</td>
+                <td>{{ faculty_member.password }}</td>
+                <td>{{ faculty_member.batch }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Students Collection</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Student ID</th>
+                <th>Batch</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Faculty Dict</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for student in students %}
+            <tr>
+                <td>{{ student.name }}</td>
+                <td>{{ student.student_id }}</td>
+                <td>{{ student.batch }}</td>
+                <td>{{ student.email }}</td>
+                <td>{{ student.password }}</td>
+                <td>{{ student.faculty_dict }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>User Collection</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Type</th>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td>{{ user.user_id }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.password }}</td>
+                <td>{{ user.type }}</td>
+                <td>{{ user.username }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Results Collection</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Subject Name</th>
+                <th>Total Marks</th>
+                <th>Obtained Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in results %}
+            <tr>
+                <td>{{ result.student_id }}</td>
+                <td>{{ result.subject_name }}</td>
+                <td>{{ result.total_marks }}</td>
+                <td>{{ result.obtained_marks }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+</html>

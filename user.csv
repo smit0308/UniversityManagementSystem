@@ -1,0 +1,20 @@
+user_id,email,password,type,username
+faculty_id,email,password,faculty,name
+11,s@gmail.com,1234,faculty,Smit1234
+11rajiv,rajiv@gmail.com,1234,faculty,rajiv
+1amit,amitava@gmail.com,12345,faculty,amitava
+11soham,soham1234@gmail.com,1234,faculty,soham
+1rajeshid,rajesh@gmail.com,1234,faculty,rajesh
+1ketanID,ketan12@gmail.com,1234,faculty,Ketan 
+1dhavalID,dhaval@gmail.com,1234,faculty,dhaval
+1hargeetID,hargeet45@gmail.com,1234,faculty,hargeet
+1harshID,harsh12@gmail.com,1234,faculty,Harsh
+1shreyanshID,shre123@gmail.com,1234,faculty,Shreyansh
+student_id,email,password,student,name
+12amin,amin12@gmail.com,1234,student,Amin
+21BCP022,smit12@gmail.com,1234,student,Smit
+poojan12,poojan@gmail.com,1234,student,Poojan Patel
+sahil12,sahil12@gmail.com,1234,student,Sahil
+21rishitID,rishit12@gmail.com,1234,student,rishit
+11naishal,naishal12@gmail.com,1234,student,naishal
+1axatID,axat12@gmail.com,1234,student,axat

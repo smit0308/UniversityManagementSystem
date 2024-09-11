@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Document</title>
+    <style> 
+        #about1{
+            background-color: lightblue;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+        #navbar{
+            margin-bottom: 15px;
+        }
+    </style>
+</head> 
+<body>
+    <div id="navbar">
+    {% include 'nav.html' %}
+    </div>  
+    <div class="container">
+        <h1 class="text-center" id="about1">About Us</h1>
+        <h4 style = "font-family: Monospace; font-weight: bold ">Pandit Deendayal Energy University</h4>
+        <p align="left" id="about">Energy and energy infrastructure are critical to any economy for the development and sustainability. India has recognised this fact and has embarked upon a comprehensive strategy to address the concerns of energy security of India. The need for a resource center was anticipated to keep pace with the fast developing and competitive energy industry, to plan for the future and to continuously build requisite intellectual capital and human resource skills.</p>
+        <div class="mid">
+            <div id="contentin">
+              <p>&nbsp;</p>
+              <table class="mapTable" border="0" cellspacing="0" cellpadding="10" width="100%">
+                <tbody><tr>
+                  <td valign="bottom"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Pandit+Deendayal+Petroleum+University,++gandhinagar&amp;aq=&amp;sll=21.125498,81.914063&amp;sspn=41.2589,56.513672&amp;vpsrc=0&amp;ie=UTF8&amp;hq=Pandit+Deendayal+Petroleum+University,&amp;hnear=Gandhinagar,+Gujarat&amp;t=m&amp;ll=23.156166,72.665072&amp;spn=0.161095,0.028816&amp;output=embed"></iframe></td>
+      
+                  <td width="310" valign="bottom"><b>Pandit Deendayal Energy University</b><br>
+                  Knowledge Corridor, Raisan Village, <br>
+                  Gandhinagar - 382426 Gujarat (State), INDIA<br>
+                  Tel: +91 79 23275078/ 82/ 90<br>
+                  Fax: +91 79 23275030<br>
+                  Website: www.pdpu.ac.in</td>
+                </tr>
+              </tbody></table>
+             
+          </div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>

@@ -1,0 +1,8 @@
+name,student_id,batch,email,password,faculty_dict
+Amin,12amin,CSE,amin12@gmail.com,1234,"1amit,11soham,1rajeshid"
+Smit,21BCP022,CSE,smit12@gmail.com,1234,"1amit,11soham,1rajeshid"
+Poojan Patel,poojan12,CSE,poojan@gmail.com,1234,"1amit,11soham"
+Sahil,sahil12,ICT,sahil12@gmail.com,1234,1amit
+rishit,21rishitID,CSE,rishit12@gmail.com,1234,11
+naishal,11naishal,CSE,naishal12@gmail.com,1234,"11soham,1ketanID"
+axat,1axatID,ICT,axat12@gmail.com,1234,"11soham,1ketanID"
